@@ -1,0 +1,27 @@
+   <h1>Test</h1>
+      <div class="wrapper">
+      <canvas id="line-chart" width="400" height="400"></canvas>
+      </div>
+
+      <script>
+          new Chart(document.getElementById("line-chart"), {
+              type: 'line',
+              data: {
+                labels: {{paises|tojson}},
+                datasets: [
+                  {
+                    label: "Population (millions)",
+                    backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                    data: {{data|tojson}}
+                  }
+                ]
+              },
+              options: {
+                legend: { display: false },
+                title: {
+                  display: true,
+                  text: 'Predicted world population (millions) in 2050'
+                }
+              }
+              });
+      </script>
