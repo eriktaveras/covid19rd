@@ -12,7 +12,7 @@ get==2019.4.13
 gunicorn==20.0.4
 idna==2.9
 ipykernel==5.2.1
-ipython==7.14.0
+ipython==7.16.3
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
 jedi==0.17.0
